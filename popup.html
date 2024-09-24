@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hatırlatıcı</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup-container">
+    <h2>Hatırlatıcı</h2>
+
+    <!-- Mola Süresi Seçimi -->
+    <label for="timeType">Mola Türü:</label>
+    <select id="timeType">
+        <option value="preset">Hazır Süre Seç</option>
+        <option value="custom">Özel Tarih ve Saat</option>
+    </select>
+
+    <!-- Hazır Süre Seçenekleri -->
+    <div id="presetTimeContainer">
+        <label for="presetTime">Mola Aralığı:</label>
+        <select id="presetTime">
+            <option value="1">1 Dakika</option>
+            <option value="5">5 Dakika</option>
+            <option value="10">10 Dakika</option>
+            <option value="30">30 Dakika</option>
+            <option value="60">1 Saat</option>
+        </select>
+    </div>
+
+    <!-- Özel Tarih ve Saat Seçimi -->
+    <div id="customTimeContainer" style="display:none;">
+        <label for="customDateTime">Tarih ve Saat Seç:</label>
+        <input type="datetime-local" id="customDateTime">
+    </div>
+
+    <!-- Bildirim Mesajı -->
+    <label for="notificationMessage">Bildirim Mesajı:</label>
+    <input type="text" id="notificationMessage" placeholder="Bildirim mesajınızı yazın">
+
+    <button id="startButton">Başla</button>
+    <button id="stopButton">Durdur</button>
+    <p id="statusText">Mola Ayarlanmadı</p>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

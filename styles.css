@@ -1,0 +1,90 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 300px; /* Popup genişliğini ayarlayın */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: relative; /* Popup'un yerleşimi için konumlandırma */
+}
+
+/* Başlık */
+h2 {
+    color: #212529;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Etiketler */
+label {
+    display: block;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    color: #495057;
+}
+
+/* Girdi ve Seçim Kutuları */
+select, input[type="text"], input[type="datetime-local"], button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+/* Seçim Kutusu Özelleştirmesi */
+select, input[type="text"] {
+    background-color: #ffffff;
+    color: #495057;
+}
+
+/* Buton Stili */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.4);
+}
+
+/* Durum Metni */
+#statusText {
+    font-weight: 600;
+    color: #343a40;
+    font-size: 1.15em;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Mola Türü Seçimi */
+#timeType {
+    margin-bottom: 15px;
+}
+
+/* Bildirim Mesajı */
+#notificationMessage {
+    font-size: 1em;
+}
